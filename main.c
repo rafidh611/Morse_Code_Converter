@@ -104,10 +104,87 @@ int MorsetoLetter()
 		int current = statusPORTE();
 		
 	}
-	if(index==1){}
+	if(index==1)
+	{
+		for(int i=0;i<2;i++)
+		{
+			if(Letter1[i].arr[0]==track[0])
+			{
+				return Letter1[i].character;
+				break;
+				
+			}
+		}
+	}
+	if(index==2)
+	{
+		for(int i=0;i<4;i++)
+		{
+			if(Letter2[i].arr[0]==track[0])
+			{
+				if(Letter2[i].arr[1]==track[1])
+				{
+					return Letter2[i].character;
+					break;
+				}
+			}
+		}
+	}
+	if(index==3)
+	{
+		for(int i=0;i<8;i++)
+		{
+			if(Letter3[i].arr[0]==track[0])
+			{
+				if(Letter3[i].arr[1]==track[1])
+				{
+					if(Letter3[i].arr[2]==track[2])
+					{
+						return Letter3[i].character;
+					  break;
+					}
+				}
+			}
+		}
+	}
+	if(index==4)
+	{
+		for(int i=0;i<12;i++)
+		{
+			if(Letter4[i].arr[0]==track[0])
+			{
+				if(Letter4[i].arr[1]==track[1])
+				{
+					if(Letter4[i].arr[2]==track[2])
+					{
+						if(Letter4[i].arr[3]==track[3])
+						{
+							return Letter4[i].character;
+					    break;
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	
 }
 
 
-int main(){
+int main()
+{
+	Switches_Init();
+	Lights_Init();
+	int input;
+	while(1)
+	{
+		printf("If you want Morse to Word input 0 or 1 if vice versa:\n");
+		scanf("%d",&input);
+		if(input==0)
+		{
+			
+		}
+		
+	}
 }
