@@ -3,7 +3,6 @@
 #include "../inc/tm4c123gh6pm.h"
 #include "ST7735.h"
 #include "Print.h"
-#include "Random.h"
 #include "PLL.h"
 
 char inputString[30];
